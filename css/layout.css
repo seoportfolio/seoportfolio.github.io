@@ -1,0 +1,267 @@
+/* ===========================
+   Home
+=========================== */
+
+/* ===========================
+   MAIN CONTAINER
+=========================== */
+.about-container {
+  position: relative; /* 이미지 absolute 기준 */
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+/* ===========================
+   INTRO SECTION
+=========================== */
+.intro {
+  max-width: 880px;
+  text-align: center;
+  
+  margin: 100px auto 0; /* 필요에 따라 조정 */
+  position: relative;
+  z-index: 1; /* 이미지 위 */
+}
+
+.intro h1 {
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.intro h2 {
+  font-size: 48px;
+  margin-top: 30px;
+}
+
+.intro p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-top: 40px;
+  color: #D24901;
+}
+
+/* ===========================
+   TEXT SECTION
+=========================== */
+.text-section {
+  max-width: 880px;
+  margin: 300px auto 0; /* 필요에 따라 조정 */
+  font-size: 20px;
+  line-height: 1.7;
+  color: #D24901;
+  position: relative;
+  z-index: 1; /* 이미지 위 */
+}
+
+/* ===========================
+   VALUES SECTION
+=========================== */
+.values {
+  max-width: 880px;
+  margin: 400px auto 160px;
+  position: relative; /* 추가 */
+  z-index: 1;         /* 글씨가 이미지 위 */
+}
+
+.values h2 {
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+
+.values .highlight,
+.values .emphasis {
+  color: #E60177;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.values .emphasis {
+  margin-top: 40px;
+  position: relative; /* 필요시 추가 */
+  z-index: 1;
+}
+
+/* ===========================
+   FACILITIES PAGE STYLE
+=========================== */
+
+.facility {
+  display: flex;
+  flex-direction: column; /* 1컬럼 세로 배치 */
+  gap : 20px;
+  max-width: 880px;
+  margin: 100px auto 0; /* 필요에 따라 조정 */
+  text-align: left;
+}
+
+.facility .intro {
+  display: flex;
+  flex-direction: column;
+  max-width: 880px;
+  gap: 20px;
+  text-align: left;
+  margin-top: 0px; /* 기존 100px → 40px으로 줄임 */
+}
+
+.facility h2 {
+  font-size: 46px;
+  font-weight: 600;
+  color: #D14901; /* 기존 글자색 유지 */
+  margin: 0;
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.facility a {
+  text-decoration: none;
+  color: #D14901; /* 기본 글자색 유지 */
+  font-weight: 600;
+  display: block;  /* 클릭 영역 전체 확보 */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.facility a.art_gallery:hover {
+  color: #E60177;/* hover 시 강조색 */
+}
+
+.facility a.conservatory:hover {
+  color: #D14901;
+}
+
+.facility a.hall:hover {
+  color: #946F2D;
+}
+
+.facility a.theatre:hover {
+  color: #007E9E;
+}
+
+
+/* ===========================
+   Art Gallery
+=========================== */
+.art_gallery .intro {
+  display: flex;
+  justify-content: space-between; /* 좌우 배치 */
+  align-items: flex-start;        /* 위쪽 정렬 (원하면 flex-end로 아래쪽 정렬 가능) */
+  max-width: 880px;               /* 기존 기본 intro와 동일 */
+  margin: 100px auto 0;           /* 상단 여백 + 가운데 정렬 */
+  padding: 0 20px;                /* 좌우 여백 */
+  gap: 40px;                      /* 요소 사이 간격 */
+}
+
+.art_gallery .intro h1 {
+  font-size: clamp(40px, 6vw, 75px);
+  font-weight: 700;
+  color: #E60177;
+  margin: 0;
+  line-height: 1.1;
+  flex: 1;                        /* 공간 확보 */
+  text-align: left;               /* 왼쪽 정렬 */
+}
+
+.art_gallery .intro p {
+  font-size: clamp(16px, 2vw, 20px);
+  line-height: 1.5;
+  color: #E60177;
+  margin: 0;
+  max-width: 50%;                 /* p가 너무 넓어지지 않게 제한 */
+  text-align: left;           
+}
+
+/* ===========================
+   Conservatory
+=========================== */
+.conservatory .intro {
+  display: flex;
+  justify-content: space-between; /* 좌우 배치 */
+  align-items: flex-start;        /* 위쪽 정렬 (원하면 flex-end로 아래쪽 정렬 가능) */
+  max-width: 880px;               /* 기존 기본 intro와 동일 */
+  margin: 100px auto 0;           /* 상단 여백 + 가운데 정렬 */
+  padding: 0 20px;                /* 좌우 여백 */
+  gap: 40px;                      /* 요소 사이 간격 */
+}
+
+.conservatory .intro h1 {
+  font-size: clamp(40px, 6vw, 75px);
+  font-weight: 700;
+  color: #D14901;
+  margin: 0;
+  line-height: 1.1;
+  flex: 1;                        /* 공간 확보 */
+  text-align: left;               /* 왼쪽 정렬 */
+}
+
+.conservatory .intro p {
+  font-size: clamp(16px, 2vw, 20px);
+  line-height: 1.5;
+  color: #D14901;
+  margin: 0;
+  max-width: 50%;                 /* p가 너무 넓어지지 않게 제한 */
+  text-align: left;              /* 오른쪽 정렬 */
+}
+
+/* ===========================
+   Hall
+=========================== */
+.hall .intro {
+  display: flex;
+  justify-content: space-between; /* 좌우 배치 */
+  align-items: flex-start;        /* 위쪽 정렬 (원하면 flex-end로 아래쪽 정렬 가능) */
+  max-width: 880px;               /* 기존 기본 intro와 동일 */
+  margin: 100px auto 0;           /* 상단 여백 + 가운데 정렬 */
+  padding: 0 20px;                /* 좌우 여백 */
+  gap: 40px;                      /* 요소 사이 간격 */
+}
+
+.hall .intro h1 {
+  font-size: clamp(40px, 6vw, 75px);
+  font-weight: 700;
+  color: #946F2D;
+  margin: 0;
+  line-height: 1.1;
+  flex: 1;                        /* 공간 확보 */
+  text-align: left;               /* 왼쪽 정렬 */
+}
+
+.hall .intro p {
+  font-size: clamp(16px, 2vw, 20px);
+  line-height: 1.5;
+  color: #946F2D;
+  margin: 0;
+  max-width: 50%;                 /* p가 너무 넓어지지 않게 제한 */
+  text-align: left;              /* 오른쪽 정렬 */
+}
+
+/* ===========================
+   Theatre
+=========================== */
+.theatre .intro {
+  display: flex;
+  justify-content: space-between; /* 좌우 배치 */
+  align-items: flex-start;        /* 위쪽 정렬 (원하면 flex-end로 아래쪽 정렬 가능) */
+  max-width: 880px;               /* 기존 기본 intro와 동일 */
+  margin: 100px auto 0;           /* 상단 여백 + 가운데 정렬 */
+  padding: 0 20px;                /* 좌우 여백 */
+  gap: 40px;                      /* 요소 사이 간격 */
+}
+
+.theatre .intro h1 {
+  font-size: clamp(40px, 6vw, 75px);
+  font-weight: 700;
+  color: #007E9E;
+  margin: 0;
+  line-height: 1.1;
+  flex: 1;                        /* 공간 확보 */
+  text-align: left;               /* 왼쪽 정렬 */
+}
+
+.theatre .intro p {
+  font-size: clamp(16px, 2vw, 20px);
+  line-height: 1.5;
+  color: #007E9E;
+  margin: 0;
+  max-width: 50%;                 /* p가 너무 넓어지지 않게 제한 */
+  text-align: left;              /* 오른쪽 정렬 */
+}

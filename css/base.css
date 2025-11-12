@@ -1,0 +1,309 @@
+/* ===========================
+   BASE STYLE
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #D14901;
+  background-color: white;
+}
+
+/* 그리드 배경은 특정 페이지에만 */
+body.about_page {
+  /* background-image: repeating-linear-gradient(
+    to right,
+    rgba(255, 200, 200, 0.3) 0,
+    rgba(255, 200, 200, 0.3) 80px,
+    white 80px,
+    white 120px
+  );
+  background-size: 120px 100%; */
+}
+
+
+body.main_page {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden; /* 스크롤 숨김 */
+  background-image: url('../img/home/Main_bg_grain2.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+/* Facilities 페이지 전용 배경 */
+body.facilities_page {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden; /* 스크롤 숨김 */
+  background-image: url('../img/home/Main_bg_grain2.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+body.facilities_page::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: calc(50% - 270px);
+  width: 1px;
+  height: 100vh;
+  background-color: #dd9670;
+  z-index: 0;
+}
+
+/* 가로줄 4개 */
+body.facilities_page::after {
+  content: '';
+  position: fixed;
+  top: 450px; /* 첫 번째 가로줄 시작 위치 */
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #dd9670;
+  z-index: 0;
+  box-shadow: 
+    0 78px 0 0 #dd9670,
+    0 156px 0 0 #dd9670,
+    0 234px 0 0 #dd9670; 
+}
+
+.page-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;          /* 화면 전체 */
+  object-fit: cover;     /* 화면에 맞게 확대/잘림 */
+  object-position: center center;
+  z-index: -2;           /* 기존 ::before 뒤로 */
+}
+
+
+
+
+body.art_gallery_page {
+    color: #E60177;
+}
+
+body.art_gallery_page .nav a{
+  text-decoration: none;
+  color: #E60177;
+  font-weight: 600;
+  margin-left: 40px;
+  font-size: 20px;
+}
+
+body.art_gallery_page .nav a.active{
+  border-bottom: 2px solid #E60177;
+}
+
+
+.page-noise {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  background: #7a7979; /* 검정 배경 */
+  overflow: hidden;
+}
+
+/* 노이즈 패턴 레이어 1 */
+.page-noise::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 200%;
+  height: 200%;
+  background-image:
+    radial-gradient(rgba(255,255,255,0.2) 1px, transparent 1px),
+    radial-gradient(rgba(255,255,255,0.15) 1px, transparent 1px),
+    radial-gradient(rgba(255,255,255,0.1) 1px, transparent 1px);
+  background-size: 5px 5px, 6px 6px, 7px 7px;
+  opacity: 0.15;
+  animation: noise-move 0.08s steps(2) infinite;
+}
+
+/* 노이즈 패턴 레이어 2 - 살짝 다른 속도로 흔들기 */
+.page-noise::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 200%;
+  height: 200%;
+  background-image:
+    radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+    radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px);
+  background-size: 5px 6px, 7px 8px;
+  opacity: 0.12;
+  animation: noise-move-alt 0.1s steps(2) infinite;
+}
+
+@keyframes noise-move {
+  0% { transform: translate(0,0); }
+  50% { transform: translate(-4px,3px); }
+  100% { transform: translate(0,0); }
+}
+
+@keyframes noise-move-alt {
+  0% { transform: translate(0,0); }
+  50% { transform: translate(3px,-2px); }
+  100% { transform: translate(0,0); }
+}
+
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 화면 꽉 차게 */
+  pointer-events: none; /* 클릭 방해 안됨 */
+  z-index: -1;
+}
+
+/* ===========================
+   기본 HEADER
+=========================== */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  max-width: 1200px;
+  margin: 36px auto;
+  padding: 0 40px;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #D14901; 
+  font-weight: 600;
+  margin-left: 40px;
+  font-size: 20px;
+}
+
+
+.nav a.conservatory {
+  text-decoration: none;
+  color: #D14901;
+  font-weight: 600;
+  margin-left: 40px;
+  font-size: 20px;
+}
+
+.nav a.hall {
+  text-decoration: none;
+  color: #946F2D;
+  font-weight: 600;
+  margin-left: 40px;
+  font-size: 20px;
+}
+
+.nav a.theatre {
+  text-decoration: none;
+  color: #007E9E;
+  font-weight: 600;
+  margin-left: 40px;
+  font-size: 20px;
+}
+
+.nav a.active {
+  border-bottom: 2px solid #D14901;
+}
+
+/* ===========================
+   Art Gallery HEADER
+=========================== */
+body.art_gallery_page {
+    color: #E60177;
+}
+
+body.art_gallery_page .nav a{
+  text-decoration: none;
+  color: #E60177;
+  font-weight: 600;
+  margin-left: 40px;
+  font-size: 20px;
+}
+
+body.art_gallery_page .nav a.active{
+  border-bottom: 2px solid #E60177;
+}
+
+/* ===========================
+   Conservatory HEADER
+=========================== */
+body.conservatory_page {
+    color: #D14901;
+}
+
+body.conservatory_page .nav a{
+  text-decoration: none;
+  color: #D14901;
+  font-weight: 600;
+  margin-left: 40px;
+  font-size: 20px;
+}
+
+body.conservatory_page .nav a.active{
+  border-bottom: 2px solid #D14901;
+}
+
+/* ===========================
+   Hall HEADER
+=========================== */
+body.hall_page {
+    color: #946F2D;
+}
+
+body.hall_page .nav a{
+  text-decoration: none;
+  color: #946F2D;
+  font-weight: 600;
+  margin-left: 40px;
+  font-size: 20px;
+}
+
+body.hall_page .nav a.active{
+  border-bottom: 2px solid #946F2D;
+}
+
+/* ===========================
+   Theatre HEADER
+=========================== */
+body.theatre_page {
+    color: #007E9E;
+}
+
+body.theatre_page .nav a{
+  text-decoration: none;
+  color: #007E9E;
+  font-weight: 600;
+  margin-left: 40px;
+  font-size: 20px;
+}
+
+body.theatre_page .nav a.active{
+  border-bottom: 2px solid #007E9E;
+}
