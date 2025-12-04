@@ -66,7 +66,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 80px;        /* 띠 높이 */
+  height: 60px;        /* 띠 높이 */
   overflow: hidden;
   z-index: 1000;
 }
@@ -111,10 +111,6 @@
    Facilities image format 같음
 =========================== */
 .facilites_img {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -122,7 +118,7 @@
   gap: 20px;
   background: white;
   padding-bottom: 40px;
-  z-index: 10;
+  height: 40vh;   /* ← 이게 있어야 아래 정렬이 동작함 */
 }
 
 .facilites_img img {
