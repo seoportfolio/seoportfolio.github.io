@@ -111,17 +111,18 @@
    Facilities image format 같음
 =========================== */
 .facilites_img {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* 좌우 중앙 정렬 */
-  align-items: flex-end;   /* 아래쪽 정렬 */
+  justify-content: center;
+  align-items: flex-end;
   gap: 20px;
-  position: relative;
   background: white;
-  overflow: hidden;
-  margin: 0 auto;
-  /*height: 40vh;*/           /* 전체 화면 높이 기준 */
   padding-bottom: 40px;
+  z-index: 10;
 }
 
 .facilites_img img {
