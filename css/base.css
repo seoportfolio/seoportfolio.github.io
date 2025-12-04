@@ -206,7 +206,7 @@ video {
 
 .nav a.conservatory {
   text-decoration: none;
-  color: #D14901;
+  color: #c4825e;
   font-weight: 600;
   margin-left: 40px;
   font-size: 20px;
@@ -255,19 +255,19 @@ body.art_gallery_page .nav a.active{
    Conservatory HEADER
 =========================== */
 body.conservatory_page {
-    color: #D14901;
+    color: #c4825e;
 }
 
 body.conservatory_page .nav a{
   text-decoration: none;
-  color: #D14901;
+  color: #c4825e;
   font-weight: 600;
   margin-left: 40px;
   font-size: 20px;
 }
 
 body.conservatory_page .nav a.active{
-  border-bottom: 2px solid #D14901;
+  border-bottom: 2px solid #c4825e;
 }
 
 /* ===========================
