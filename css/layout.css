@@ -146,7 +146,7 @@
   justify-content: space-between; /* 좌우 배치 */
   align-items: flex-start;        /* 위쪽 정렬 (원하면 flex-end로 아래쪽 정렬 가능) */
   max-width: 1157px;               /* 기존 기본 intro와 동일 */
-  margin: 100px auto 0;           /* 상단 여백 + 가운데 정렬 */
+  margin: 200px auto 0;           /* 상단 여백 + 가운데 정렬 */
   padding: 0 20px;                /* 좌우 여백 */
   gap: 40px;                      /* 요소 사이 간격 */
 }
@@ -178,7 +178,7 @@
   justify-content: space-between; /* 좌우 배치 */
   align-items: flex-start;        /* 위쪽 정렬 (원하면 flex-end로 아래쪽 정렬 가능) */
   max-width: 1157px;               /* 기존 기본 intro와 동일 */
-  margin: 100px auto 0;           /* 상단 여백 + 가운데 정렬 */
+  margin: 200px auto 0;           /* 상단 여백 + 가운데 정렬 */
   padding: 0 20px;                /* 좌우 여백 */
   gap: 40px;                      /* 요소 사이 간격 */
 }
@@ -210,7 +210,7 @@
   justify-content: space-between; /* 좌우 배치 */
   align-items: flex-start;        /* 위쪽 정렬 (원하면 flex-end로 아래쪽 정렬 가능) */
   max-width: 1157px;               /* 기존 기본 intro와 동일 */
-  margin: 100px auto 0;           /* 상단 여백 + 가운데 정렬 */
+  margin: 200px auto 0;           /* 상단 여백 + 가운데 정렬 */
   padding: 0 20px;                /* 좌우 여백 */
   gap: 40px;                      /* 요소 사이 간격 */
 }
@@ -242,7 +242,7 @@
   justify-content: space-between; /* 좌우 배치 */
   align-items: flex-start;        /* 위쪽 정렬 (원하면 flex-end로 아래쪽 정렬 가능) */
   max-width: 1157px;               /* 기존 기본 intro와 동일 */
-  margin: 100px auto 0;           /* 상단 여백 + 가운데 정렬 */
+  margin: 200px auto 0;           /* 상단 여백 + 가운데 정렬 */
   padding: 0 20px;                /* 좌우 여백 */
   gap: 40px;                      /* 요소 사이 간격 */
 }
