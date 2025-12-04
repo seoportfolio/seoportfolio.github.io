@@ -120,14 +120,14 @@
   background: white;
   overflow: hidden;
   margin: 0 auto;
-  height: 40vh;           /* 전체 화면 높이 기준 */
+  /*height: 40vh;*/           /* 전체 화면 높이 기준 */
   padding-bottom: 40px;
 }
 
 .facilites_img img {
   display: block;
-  width: 75%;
-  max-width: 270px;        /* 이미지 최대 크기 */
+  width: 100%;
+  max-width: 260px;        /* 이미지 최대 크기 */
   filter: grayscale(100%);
   transition: filter 0.5s ease;
 }
