@@ -126,7 +126,7 @@
 }
 
 .facility a.conservatory:hover {
-  color: #D14901;
+  color: #c4825e;
 }
 
 .facility a.hall:hover {
@@ -186,7 +186,7 @@
 .conservatory .intro h1 {
   font-size: clamp(40px, 6vw, 75px);
   font-weight: 700;
-  color: #D14901;
+  color: #c4825e;
   margin: 0;
   line-height: 1.1;
   flex: 1;                        /* 공간 확보 */
@@ -196,7 +196,7 @@
 .conservatory .intro p {
   font-size: clamp(16px, 2vw, 20px);
   line-height: 1.5;
-  color: #D14901;
+  color: #c4825e;
   margin: 0;
   max-width: 50%;                 /* p가 너무 넓어지지 않게 제한 */
   text-align: left;              /* 오른쪽 정렬 */
