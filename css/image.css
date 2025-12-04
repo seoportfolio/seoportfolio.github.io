@@ -121,6 +121,7 @@
   overflow: hidden;
   margin: 0 auto;
   height: 40vh;           /* 전체 화면 높이 기준 */
+  padding-bottom: 40px;
 }
 
 .facilites_img img {
