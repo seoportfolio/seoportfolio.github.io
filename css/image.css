@@ -127,7 +127,7 @@
 .facilites_img img {
   display: block;
   width: 100%;
-  max-width: 286px;        /* 이미지 최대 크기 */
+  max-width: 270px;        /* 이미지 최대 크기 */
   filter: grayscale(100%);
   transition: filter 0.5s ease;
 }
